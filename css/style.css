@@ -1,0 +1,388 @@
+* {
+    font-family: 'Open Sans', Arial, comic-sans;
+    box-sizing: border-box;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin1 {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes spin1 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin1 {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes rotate90 {
+    100% {
+        -moz-transform: rotate(80deg);
+    }
+}
+
+@-webkit-keyframes rotate90 {
+    100% {
+        -webkit-transform: rotate(80deg);
+    }
+}
+
+@keyframes rotate90 {
+    100% {
+        -webkit-transform: rotate(80deg);
+        transform: rotate(80deg);
+    }
+}
+
+@keyframes rotate90 {
+    100% {
+        -webkit-transform: rotate(80deg);
+        transform: rotate(80deg);
+        -webkit-transform-origin: 0 274px;
+    }
+}
+
+.header {
+    width: 1000px;
+    height: 151px;
+    margin: 0 auto;
+}
+
+.banner {
+    background: url(../images/banner1.png)center top no-repeat;
+    width: 1000px;
+    height: 151px;
+    float: left;
+}
+
+.menu {
+    background: orange;
+    width: 1000px;
+    height: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.back {
+    background: url(../images/back.jpg) center top no-repeat;
+    width: 1000px;
+    height: 935px;
+    margin: 0 auto;
+}
+
+.player {
+    background: url(../images/walk.png) center top no-repeat;
+    width: 648px;
+    height: 467px;
+    position: relative;
+    z-index: 900;
+    margin: 0 auto;
+}
+
+.whell1 {
+    background: url(../images/whell.png) center top no-repeat;
+    width: 59px;
+    height: 57px;
+    position: absolute;
+    top: 123px;
+    left: 350px;
+}
+
+.whell1.animate {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+.whell2 {
+    background: url(../images/whell.png) center top no-repeat;
+    width: 59px;
+    height: 57px;
+    position: absolute;
+    top: 281px;
+    left: 350px;
+}
+
+.whell2.animate {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+.play {
+    background: url(../images/button.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    top: 85px;
+    z-index: 0;
+    left: 117px;
+}
+
+.forward {
+    background: url(../images/button.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    top: 135px;
+    z-index: 999;
+    left: 116px;
+}
+
+.whell1.animefast {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.whell2.animefast {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.rewind {
+    background: url(../images/button.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 185px;
+    left: 116px;
+}
+
+.whell1.animefastback {
+    -webkit-animation: spin1 1s linear infinite;
+    -moz-animation: spin1 1s linear infinite;
+    animation: spin1 1s linear infinite;
+}
+
+.whell2.animefastback {
+    -webkit-animation: spin1 1s linear infinite;
+    -moz-animation: spin1 1s linear infinite;
+    animation: spin1 1s linear infinite;
+}
+
+.stop {
+    background: url(../images/button.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    bottom: 193px;
+    right: 508px;
+}
+
+.radio {
+    background: url(../images/button_radio.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    bottom: 141px;
+    right: 508px
+}
+
+.antenna {
+    background: url(../images/antenna.png) center top no-repeat;
+    width: 54px;
+    height: 274px;
+    position: absolute;
+    z-index: 999;
+    bottom: 108px;
+    right: 98px;
+}
+
+.antenna.rotate {
+    -webkit-animation: rotate90 1s forwards;
+    -moz-animation: rotate90 1s forwards;
+    animation: rotate90 1s forwards;
+}
+
+.playb {
+    background: url(../images/playb.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 84px;
+    left: 140px
+}
+
+.fwd {
+    background: url(../images/fwd.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 135px;
+    left: 140px
+}
+
+.rev {
+    background: url(../images/rev.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 185px;
+    left: 140px
+}
+
+.stop1 {
+    background: url(../images/stop1.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 234px;
+    left: 140px;
+}
+
+.radio1 {
+    background: url(../images/radio1.png) center top no-repeat;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 287px;
+    left: 140px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+        padding-left: 110%;
+    }
+    100% {
+        transform: translateX(-100%);
+        padding-left: 110%;
+    }
+}
+
+.show {
+    position: relative;
+    background: orange;
+    width: 1000px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.show>p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    display: none;
+}
+
+.show>p.move {
+    animation: move 30s linear infinite;
+    display: inline-block;
+}
+
+.show1 {
+    position: relative;
+    background: orange;
+    width: 1000px;
+    height: 22px;
+    overflow: hidden;
+}
+
+.show1>p {
+    position: absolute;
+    margin: 0;
+    white-space: nowrap;
+    display: none;
+}
+
+.show1>p.move {
+    animation: move 30s linear infinite;
+    display: inline-block;
+}
+
+.b1 {
+    height: 20px;
+    width: 200px;
+    float: left;
+    margin-left: 80px;
+}
+
+.b2 {
+    height: 20px;
+    width: 200px;
+    float: left;
+}
+
+.b3 {
+    height: 20px;
+    width: 200px;
+    float: left;
+}
+
+.b5 {
+    height: 20px;
+    width: 200px;
+    float: left;
+}
+
+.fail {
+    background: url(../images/fail.jpg) center top no-repeat;
+    background-position: center;
+    width: 1000px;
+    height: 764px;
+}
+
+.history {
+    color: orange;
+    margin-left: 10px;
+}
+
+.slider {
+    height: 800px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.slider li {
+    height: 800px;
+    width: 1000px;
+}
+
+.slider ul {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
